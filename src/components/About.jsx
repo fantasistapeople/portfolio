@@ -7,14 +7,15 @@ export default function About() {
     <section id="about" style={{ padding: "100px 0", position: "relative", zIndex: 1 }}>
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 28px" }}>
         <SectionHeader label="Who I Am" title="About Me" />
-        <div style={{ display: "grid", gridTemplateColumns: "280px 1fr", gap: 60, alignItems: "start", marginTop: 56 }}>
+        <div className="about-grid" style={{ display: "grid", gridTemplateColumns: "280px 1fr", gap: 60, alignItems: "start", marginTop: 56 }}>
 
             <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                style={{ position: "relative" }}
+              className="about-avatar-wrap"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              style={{ position: "relative" }}
             >
             <div style={{
                 width: "100%", aspectRatio: "1",

@@ -29,7 +29,7 @@ export default function Contact() {
     <section id="contact" style={{ padding: "100px 0 120px", position: "relative", zIndex: 1 }}>
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 28px" }}>
         <SectionHeader label="Let's Talk" title="Get In Touch" />
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: 60, marginTop: 56, alignItems: "start" }}>
+        <div className="contact-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: 60, marginTop: 56, alignItems: "start" }}>
 
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <h3 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: "1.5rem", marginBottom: 16, color: "var(--text)" }}>
