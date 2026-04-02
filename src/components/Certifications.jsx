@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { FiExternalLink, FiDownload } from "react-icons/fi"
 import SectionHeader from "./SectionHeader"
 import { certifications } from "../data"
 
@@ -10,12 +11,13 @@ export default function Certifications() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 20, marginTop: 56 }}>
           {certifications.map((c, i) => (
             <motion.div
-              key={i} className="glass"
+              key={i}
+              className="glass"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              whileHover={{ y: -4, borderColor: "rgba(79,142,247,0.25)" }}
+              whileHover={{ y: -4 }}
               style={{ padding: "28px 32px" }}
             >
               <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 18 }}>
@@ -31,13 +33,31 @@ export default function Certifications() {
                   </div>
                 </div>
               </div>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 18, borderTop: "1px solid var(--border)" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: "0.78rem", color: "var(--text-dim)" }}>
-                  📅 {c.period}
+
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 18, borderTop: "1px solid var(--border)", flexWrap: "wrap", gap: 10 }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                  <div style={{ fontSize: "0.78rem", color: "var(--text-dim)" }}>
+                    📅 {c.period}
+                  </div>
+                  <div style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: "0.72rem", fontWeight: 600, color: "#4ADE80", background: "rgba(74,222,128,0.1)", border: "1px solid rgba(74,222,128,0.2)", padding: "4px 12px", borderRadius: 50, width: "fit-content" }}>
+                    ✓ Active
+                  </div>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: "0.72rem", fontWeight: 600, color: "#4ADE80", background: "rgba(74,222,128,0.1)", border: "1px solid rgba(74,222,128,0.2)", padding: "4px 12px", borderRadius: 50 }}>
-                  ✓ Active
-                </div>
+
+                <a
+                  href={c.credentialUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  download={c.credentialType === "download" ? true : undefined}
+                  style={{ display: "inline-flex", alignItems: "center", gap: 6, padding: "8px 16px", borderRadius: 50, fontSize: "0.78rem", fontWeight: 600, border: "1px solid var(--border-accent)", color: "var(--blue-light)", background: "rgba(79,142,247,0.07)", textDecoration: "none", transition: "all 0.2s" }}
+                  onMouseEnter={e => { e.currentTarget.style.background = "rgba(79,142,247,0.15)"; e.currentTarget.style.borderColor = "var(--blue)" }}
+                  onMouseLeave={e => { e.currentTarget.style.background = "rgba(79,142,247,0.07)"; e.currentTarget.style.borderColor = "var(--border-accent)" }}
+                >
+                  {c.credentialType === "view"
+                    ? <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><FiExternalLink size={13} /> View Credential</span>
+                    : <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><FiDownload size={13} /> Download Certificate</span>
+                  }
+                </a>
               </div>
             </motion.div>
           ))}

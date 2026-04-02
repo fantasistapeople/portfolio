@@ -38,13 +38,28 @@ export const skills = [
 export const experiences = [
   {
     company: "XecureIT",
-    role: "Junior Engineer",
-    period: "Feb 2025 – Present",
+    role: "Network Security Engineer",
+    period: "Aug 2025 – Present",
     points: [
       "Implemented Xecure Zone security products in client data centers, including government institutions such as the Ministry of Defense, Indonesian Army Headquarters (Mabes TNI AD), and Ministry of Home Affairs.",
       "Performed data center infrastructure installation covering servers, network switches, racks, and structured cabling, followed by full system and network configuration.",
       "Performed troubleshooting and technical support to resolve user-reported issues in a timely manner.",
       "Conducted user training sessions on the proper operation and usage of Xecure Zone products."
+    ]
+  },
+  {
+    company: "XecureIT",
+    role: "SOC Analyst",
+    period: "Feb 2025 – Aug 2025",
+    points: [
+      "Monitored and analyzed incoming logs and alerts using Log Management SIEM system to detect potential security threats.",
+      "Identified suspicious IP addresses using tools such as VirusTotal and WHOIS to assess and validate potential threats.",
+      "Reported verified malicious alerts to the CSIRT (Computer Security Incident Response Team) for further investigation and response.",
+      "Monitored network traffic and data center devices using Availability Monitoring to ensure operational stability.",
+      "Performed routine storage truncation on network traffic analyzers and IDS devices when disk usage approached full capacity.",
+      "Conducted weekly updates of IDS rules and signatures to ensure up-to-date protection against emerging threats.",
+      "Created firewall rules on Security Gateway to allow or block specific network traffic as required.",
+      "Exported daily log files from Log Management SIEM for reporting and documentation purposes."
     ]
   },
   {
@@ -69,20 +84,39 @@ export const experiences = [
   }
 ]
 
+export const trainings = [
+  {
+    name: "Bangkit Academy 2023 Batch 1",
+    organizer: "Bangkit Academy — led by Google, Tokopedia, Gojek & Traveloka",
+    year: "2023",
+    duration: "6 Months",
+    period: "Feb 2023 – Jul 2023",
+    credentialUrl: null
+  },
+  {
+    name: "Back-End Developer Specialization",
+    organizer: "DBS Foundation",
+    year: "2023",
+    duration: "11 Months",
+    period: "Jan 2023 – Nov 2023",
+    credentialUrl: null
+  }
+]
+
 export const projects = [
   {
     name: "Rejuvify",
     emoji: "🧴",
     description: "A mobile application that accurately predicts facial skin diseases and provides personalized skincare recommendations powered by a machine learning model. Responsible for backend development including REST API design, database management, and cloud deployment.",
     tech: ["Express.js", "Google Cloud Run", "Cloud SQL", "Cloud Storage", "Google Maps API"],
-    github: "#"
+    github: "https://github.com/fantasistapeople/rejuvify-backend.git"
   },
   {
     name: "Studio Musik 29 — App UI/UX",
     emoji: "🎵",
     description: "Designed the UI/UX for a music studio booking application, enabling customers to reserve studio sessions seamlessly without scheduling conflicts. Focused on intuitive user flows and a clean visual language.",
     tech: ["Figma", "UI/UX Design", "Prototyping"],
-    figma: "#"
+    figma: "https://www.figma.com/proto/poQK8IypVpahWD3HJiZ2Hk/DESAIN-PELANGGAN-STUDIO-MUSIK-29?node-id=1-973&p=f&t=9eG616owliwaMJLQ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
   }
 ]
 
@@ -92,13 +126,17 @@ export const certifications = [
     issuer: "Google Cloud",
     period: "Oct 2023 – Oct 2026",
     icon: "☁️",
-    theme: "google"
+    theme: "google",
+    credentialUrl: "https://www.credly.com/badges/2f7032ee-7ddf-4bab-a8ae-01b0ecdcedf9/public_url",
+    credentialType: "view"
   },
   {
     name: "Certified Ethical Hacker (CEHv13)",
     issuer: "EC-Council",
     period: "Oct 2025 – Oct 2028",
     icon: "🛡️",
-    theme: "ec"
+    theme: "ec",
+    credentialUrl: "https://aspen.eccouncil.org/Certificate/DownloadDigitalCert?Serial=//p3RrtmJ2v0Z2nIVGGVmAGOi/+vyWq8kR2Oi3xKp0k=",
+    credentialType: "download"
   }
 ]

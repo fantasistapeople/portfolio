@@ -1,4 +1,6 @@
 import { motion } from "framer-motion"
+import { FiGithub } from "react-icons/fi"
+import { SiFigma } from "react-icons/si"
 import SectionHeader from "./SectionHeader"
 import { projects } from "../data"
 
@@ -24,13 +26,24 @@ export default function Projects() {
                 </div>
                 <div style={{ display: "flex", gap: 8 }}>
                   {p.github && (
-                    <a href={p.github} style={{ width: 34, height: 34, borderRadius: 8, border: "1px solid var(--border)", background: "transparent", color: "var(--text-muted)", display: "flex", alignItems: "center", justifyContent: "center", textDecoration: "none", fontSize: "0.9rem", transition: "all 0.2s" }}
-                      onMouseEnter={e => { e.currentTarget.style.color = "var(--blue-light)"; e.currentTarget.style.borderColor = "var(--blue-light)" }}
-                      onMouseLeave={e => { e.currentTarget.style.color = "var(--text-muted)"; e.currentTarget.style.borderColor = "var(--border)" }}
-                    >⌥</a>
+                    <a href={p.github} target="_blank" rel="noreferrer"
+                      title="View on GitHub"
+                      style={{ width: 34, height: 34, borderRadius: 8, border: "1px solid var(--border)", background: "transparent", color: "var(--text-muted)", display: "flex", alignItems: "center", justifyContent: "center", textDecoration: "none", fontSize: "1rem", transition: "all 0.2s" }}
+                      onMouseEnter={e => { e.currentTarget.style.color = "var(--blue-light)"; e.currentTarget.style.borderColor = "var(--blue-light)"; e.currentTarget.style.background = "var(--glass)" }}
+                      onMouseLeave={e => { e.currentTarget.style.color = "var(--text-muted)"; e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.background = "transparent" }}
+                    >
+                      <FiGithub />
+                    </a>
                   )}
                   {p.figma && (
-                    <a href={p.figma} style={{ width: 34, height: 34, borderRadius: 8, border: "1px solid var(--border)", background: "transparent", color: "var(--text-muted)", display: "flex", alignItems: "center", justifyContent: "center", textDecoration: "none", fontSize: "0.9rem", transition: "all 0.2s" }}>◈</a>
+                    <a href={p.figma} target="_blank" rel="noreferrer"
+                      title="View on Figma"
+                      style={{ width: 34, height: 34, borderRadius: 8, border: "1px solid var(--border)", background: "transparent", color: "var(--text-muted)", display: "flex", alignItems: "center", justifyContent: "center", textDecoration: "none", fontSize: "1rem", transition: "all 0.2s" }}
+                      onMouseEnter={e => { e.currentTarget.style.color = "#A78BFA"; e.currentTarget.style.borderColor = "#A78BFA"; e.currentTarget.style.background = "var(--glass)" }}
+                      onMouseLeave={e => { e.currentTarget.style.color = "var(--text-muted)"; e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.background = "transparent" }}
+                    >
+                      <SiFigma />
+                    </a>
                   )}
                 </div>
               </div>
