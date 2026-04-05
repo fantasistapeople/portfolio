@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Network Security Engineer",
   tagline: "Building secure networks, one packet at a time.",
   location: "Bekasi, Indonesia",
-  email: "jeremydavida11@mail.com",
+  email: "jeremydavida11@gmail.com",
   linkedin: "https://www.linkedin.com/in/jeremy-david-alexander-8b6944213",
   about: [
     "I'm a passionate IT enthusiast with a deep focus on computer networking and security. Every day brings a new opportunity to learn, adapt, and grow — and that's exactly what keeps me driven in this field.",

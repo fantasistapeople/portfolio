@@ -45,6 +45,15 @@ export default function Hero() {
                 ✉️ Get In Touch
               </button>
             </Link>
+            <a
+                href="/cv.pdf"
+                download="CV_Jeremy_David_Alexander.pdf"
+                style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "13px 28px", borderRadius: 50, background: "transparent", color: "var(--text)", fontWeight: 600, fontSize: "0.9rem", border: "1px solid var(--border)", cursor: "pointer", transition: "all 0.2s", fontFamily: "'DM Sans', sans-serif", textDecoration: "none" }}
+                onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.borderColor = "#4ADE80"; e.currentTarget.style.color = "#4ADE80"; e.currentTarget.style.background = "var(--glass)" }}
+                onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.color = "var(--text)"; e.currentTarget.style.background = "transparent" }}
+              >
+                📄 Download CV
+            </a>
           </div>
         </motion.div>
       </div>
