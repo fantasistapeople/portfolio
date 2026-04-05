@@ -9,6 +9,7 @@ import Projects from "./components/Projects"
 import Certifications from "./components/Certifications"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import { useEffect } from "react"
 
 const Divider = () => (
   <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 28px" }}>
@@ -17,6 +18,36 @@ const Divider = () => (
 )
 
 export default function App() {
+  useEffect(() => {
+  const script = document.createElement("script")
+  script.type = "application/ld+json"
+  script.text = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jeremy David Alexander",
+    "jobTitle": "Network Security Engineer",
+    "url": "https://www.jeremydavidalexander.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/jeremy-david-alexander-8b6944213",
+      "https://github.com/fantasistapeople"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bekasi",
+      "addressCountry": "ID"
+    },
+    "knowsAbout": [
+      "Network Security",
+      "Cloud Computing",
+      "Cybersecurity",
+      "Google Cloud Platform",
+      "Firewall Management"
+    ]
+  })
+  document.head.appendChild(script)
+  return () => document.head.removeChild(script)
+}, [])
+
   return (
     <>
       <Aurora />
