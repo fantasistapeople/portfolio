@@ -112,6 +112,14 @@ export const projects = [
     github: "https://github.com/fantasistapeople/rejuvify-backend.git"
   },
   {
+    name: "SubnetLens",
+    emoji: "🌐",
+    description: "A clean, professional-grade IP subnet calculator built for network engineers. Provides real-time CIDR calculation, binary IP visualization, subnet splitting, IP range to CIDR conversion, network overlap detection, and a full /0–/32 cheat sheet — all in a single, elegant dark-themed interface.",
+    tech: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+    github: "https://github.com/fantasistapeople/subnetlens",
+    demo: "https://subnetlens.vercel.app/"
+  },
+  {
     name: "Studio Musik 29 — App UI/UX",
     emoji: "🎵",
     description: "Designed the UI/UX for a music studio booking application, enabling customers to reserve studio sessions seamlessly without scheduling conflicts. Focused on intuitive user flows and a clean visual language.",

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { FiGithub } from "react-icons/fi"
+import { FiGithub, FiExternalLink } from "react-icons/fi"
 import { SiFigma } from "react-icons/si"
 import SectionHeader from "./SectionHeader"
 import { projects } from "../data"
@@ -33,6 +33,16 @@ export default function Projects() {
                       onMouseLeave={e => { e.currentTarget.style.color = "var(--text-muted)"; e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.background = "transparent" }}
                     >
                       <FiGithub />
+                    </a>
+                  )}
+                  {p.demo && (
+                    <a href={p.demo} target="_blank" rel="noreferrer"
+                      title="Live Demo"
+                      style={{ width: 34, height: 34, borderRadius: 8, border: "1px solid var(--border)", background: "transparent", color: "var(--text-muted)", display: "flex", alignItems: "center", justifyContent: "center", textDecoration: "none", fontSize: "1rem", transition: "all 0.2s" }}
+                      onMouseEnter={e => { e.currentTarget.style.color = "#4ADE80"; e.currentTarget.style.borderColor = "#4ADE80"; e.currentTarget.style.background = "var(--glass)" }}
+                      onMouseLeave={e => { e.currentTarget.style.color = "var(--text-muted)"; e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.background = "transparent" }}
+                    >
+                      <FiExternalLink />
                     </a>
                   )}
                   {p.figma && (
