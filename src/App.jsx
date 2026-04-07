@@ -10,6 +10,8 @@ import Certifications from "./components/Certifications"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import { useEffect } from "react"
+import LoadingScreen from "./components/LoadingScreen"
+import BackToTop from "./components/BackToTop"
 
 const Divider = () => (
   <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 28px" }}>
@@ -50,6 +52,7 @@ export default function App() {
 
   return (
     <>
+      <LoadingScreen />
       <Aurora />
       <Navbar />
       <Hero />
@@ -68,6 +71,7 @@ export default function App() {
       <Divider />
       <Contact />
       <Footer />
+      <BackToTop />
     </>
   )
 }
