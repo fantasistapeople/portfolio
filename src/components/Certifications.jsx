@@ -17,7 +17,7 @@ export default function Certifications() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              whileHover={{ y: -4 }}
+              whileHover={{ y: -4, borderColor: "rgba(79,142,247,0.25)" }}
               style={{ padding: "28px 32px" }}
             >
               <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 18 }}>

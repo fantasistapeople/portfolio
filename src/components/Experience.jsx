@@ -11,7 +11,6 @@ export default function Experience() {
           {experiences.map((exp, i) => (
             <motion.div
               key={i}
-              className="timeline-item"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -19,7 +18,11 @@ export default function Experience() {
               style={{ position: "relative", marginBottom: 36 }}
             >
               <div className="timeline-dot" />
-              <div className="glass" style={{ padding: "28px 32px" }}>
+              <motion.div
+                className="glass"
+                whileHover={{ y: -4, borderColor: "rgba(79,142,247,0.25)" }}
+                style={{ padding: "28px 32px" }}
+              >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 12, marginBottom: 6 }}>
                   <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: "1.05rem", color: "var(--text)" }}>
                     {exp.company}
@@ -39,7 +42,7 @@ export default function Experience() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </motion.div>
             </motion.div>
           ))}
         </div>

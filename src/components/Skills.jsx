@@ -20,6 +20,7 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.07 }}
+              whileHover={{ y: -4, borderColor: "rgba(79,142,247,0.25)" }}
               style={{ padding: 28 }}
             >
               <div style={{ display: "flex", alignItems: "center", gap: 10, fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: "0.9rem", marginBottom: 20 }}>

@@ -15,7 +15,7 @@ export const personalInfo = {
 export const skills = [
   {
     category: "Networking", icon: "🌐", theme: "blue",
-    items: ["OPNsense", "VLAN", "Subnetting", "Firewall Management", "Routing & Switching", "Asymmetric Routing", "NTP", "STP"]
+    items: ["Routing & Switching", "VLAN", "Subnetting", "Firewall Management"]
   },
   {
     category: "Cloud & Infrastructure", icon: "☁️", theme: "cyan",
@@ -23,7 +23,7 @@ export const skills = [
   },
   {
     category: "Security", icon: "🛡️", theme: "purple",
-    items: ["PKI / EJBCA", "mTLS", "CRL Management", "Firewall Policy", "IDS/IPS"]
+    items: ["Firewall Policy", "OPNsense", "PKI / EJBCA", "mTLS", "IDS/IPS"]
   },
   {
     category: "Tools & Platforms", icon: "🔧", theme: "indigo",
@@ -31,7 +31,7 @@ export const skills = [
   },
   {
     category: "Programming & Scripting", icon: "💻", theme: "pink",
-    items: ["Python", "Bash"]
+    items: ["JavaScript", "Python", "Bash"]
   }
 ]
 

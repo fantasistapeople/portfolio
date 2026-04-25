@@ -17,7 +17,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              whileHover={{ y: -5, boxShadow: "0 16px 48px rgba(0,0,0,0.4), 0 0 30px rgba(79,142,247,0.1)" }}
+              whileHover={{ y: -4, borderColor: "rgba(79,142,247,0.25)", boxShadow: "0 16px 48px rgba(0,0,0,0.4), 0 0 30px rgba(79,142,247,0.1)" }}
               style={{ padding: 32, cursor: "default" }}
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16 }}>
