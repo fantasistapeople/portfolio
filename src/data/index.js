@@ -1,47 +1,42 @@
 export const personalInfo = {
   name: "Jeremy David Alexander",
-  title: "Network Security Engineer",
-  tagline: "Building secure networks, one packet at a time.",
+  title: "Junior IT Engineer",
+  tagline: "Monitor. Engineer. Repeat.",
   location: "Bekasi, Indonesia",
   email: "jeremydavida11@gmail.com",
   linkedin: "https://www.linkedin.com/in/jeremy-david-alexander-8b6944213",
   about: [
     "I'm a passionate IT enthusiast with a deep focus on computer networking and security. Every day brings a new opportunity to learn, adapt, and grow — and that's exactly what keeps me driven in this field.",
-    "Currently working as a Junior Engineer at XecureIT, I've had the privilege of implementing enterprise-grade security solutions in government institutions across Indonesia. My background spans network security, cloud infrastructure, and web development.",
-    "Beyond technical work, I've served as a Cloud Computing Mentor in the Bangkit program — empowering the next generation of Indonesian tech talent."
+    "Currently working as a Junior IT Engineer at XecureIT, I've had the privilege of implementing enterprise-grade security solutions for public-sector and enterprise clients across Indonesia. My background spans network security, cloud infrastructure, and web development.",
   ]
 }
 
 export const skills = [
   {
-    category: "Networking", icon: "🌐", theme: "blue",
-    items: ["Routing & Switching", "VLAN", "Subnetting", "Firewall Management"]
+      category: "Networking", icon: "🌐", theme: "blue",
+      items: ["Static Routing", "VLAN", "NAT", "Firewall Management"]
   },
   {
-    category: "Cloud & Infrastructure", icon: "☁️", theme: "cyan",
-    items: ["Google Cloud Platform", "Compute Engine", "VPC", "Hierarchical Firewall", "IAP Tunnel"]
+      category: "Security", icon: "🛡️", theme: "purple",
+      items: ["OPNsense", "Suricata (IDS/IPS)"]
   },
   {
-    category: "Security", icon: "🛡️", theme: "purple",
-    items: ["Firewall Policy", "OPNsense", "PKI / EJBCA", "mTLS", "IDS/IPS"]
+      category: "Cloud & Infrastructure", icon: "☁️", theme: "cyan",
+      items: ["Google Cloud Platform", "Linux (Ubuntu/Rocky)", "Zabbix"]
   },
   {
-    category: "Tools & Platforms", icon: "🔧", theme: "indigo",
-    items: ["Linux (Ubuntu/Rocky)", "Docker", "Zabbix", "Nginx", "Git"]
-  },
-  {
-    category: "Programming & Scripting", icon: "💻", theme: "pink",
-    items: ["JavaScript", "Python", "Bash"]
+      category: "Programming & Scripting", icon: "💻", theme: "pink",
+      items: ["JavaScript"]
   }
 ]
 
 export const experiences = [
   {
     company: "XecureIT",
-    role: "Network Security Engineer",
+    role: "Junior IT Engineer",
     period: "Aug 2025 – Present",
     points: [
-      "Implemented Xecure Zone security products in client data centers, including government institutions such as the Ministry of Defense, Indonesian Army Headquarters (Mabes TNI AD), and Ministry of Home Affairs.",
+      "Implemented Xecure Zone security products in data centers for public-sector and enterprise clients.",
       "Performed data center infrastructure installation covering servers, network switches, racks, and structured cabling, followed by full system and network configuration.",
       "Performed troubleshooting and technical support to resolve user-reported issues in a timely manner.",
       "Conducted user training sessions on the proper operation and usage of Xecure Zone products."
@@ -52,14 +47,14 @@ export const experiences = [
     role: "SOC Analyst",
     period: "Feb 2025 – Aug 2025",
     points: [
-      "Monitored and analyzed incoming logs and alerts using Log Management SIEM system to detect potential security threats.",
+      "Monitored and analyzed incoming logs and alerts using a SIEM platform to detect potential security threats.",
       "Identified suspicious IP addresses using tools such as VirusTotal and WHOIS to assess and validate potential threats.",
       "Reported verified malicious alerts to the CSIRT (Computer Security Incident Response Team) for further investigation and response.",
-      "Monitored network traffic and data center devices using Availability Monitoring to ensure operational stability.",
+      "Monitored network traffic and data center devices using an availability monitoring system to ensure operational stability.",
       "Performed routine storage truncation on network traffic analyzers and IDS devices when disk usage approached full capacity.",
       "Conducted weekly updates of IDS rules and signatures to ensure up-to-date protection against emerging threats.",
-      "Created firewall rules on Security Gateway to allow or block specific network traffic as required.",
-      "Exported daily log files from Log Management SIEM for reporting and documentation purposes."
+      "Created and managed firewall rules to allow or block specific network traffic as required.",
+      "Exported daily log files from the SIEM platform for reporting and documentation purposes."
     ]
   },
   {
